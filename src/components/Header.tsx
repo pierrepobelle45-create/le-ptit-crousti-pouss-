@@ -4,9 +4,9 @@ import { business } from '../data/business'
 
 const links = [
   { href: '#maison', label: 'La maison' },
-  { href: '#fabrication', label: 'Fabrication' },
   { href: '#carte', label: 'Carte' },
   { href: '#terroir', label: 'Terroir' },
+  { href: '#distributeurs', label: '24/7' },
   { href: '#contact', label: 'Contact' },
 ]
 

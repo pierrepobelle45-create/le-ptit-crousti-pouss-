@@ -14,7 +14,7 @@ const tiles = [
 
 export function Galerie() {
   return (
-    <Section id="galerie" tone="farine" eyebrow="Galerie gourmande" index="04 — Reportage food">
+    <Section id="galerie" tone="farine" eyebrow="Galerie gourmande" index="06 — Reportage food">
       <div className="mx-auto max-w-[1500px] px-6 md:px-12">
         <h2 className="font-display text-[clamp(2.4rem,6vw,5.4rem)] leading-[0.92] text-encre">
           Ce qui se passe{' '}

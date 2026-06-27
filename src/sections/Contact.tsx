@@ -37,7 +37,7 @@ export function Contact() {
   }
 
   return (
-    <Section id="contact" tone="farine" eyebrow="Infos & contact" index="06 — On vous attend">
+    <Section id="contact" tone="farine" eyebrow="Infos & contact" index="08 — On vous attend">
       <div className="mx-auto max-w-[1400px] px-6 md:px-12">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
           {/* Colonne infos */}

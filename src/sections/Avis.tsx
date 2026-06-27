@@ -5,7 +5,7 @@ import { business } from '../data/business'
 
 export function Avis() {
   return (
-    <Section id="avis" tone="tomate" eyebrow="Avis & confiance" index="05 — 1k+ fans">
+    <Section id="avis" tone="tomate" eyebrow="Avis & confiance" index="07 — 1k+ fans">
       <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-12 px-6 md:grid-cols-12 md:gap-16 md:px-12">
         <div className="md:col-span-7">
           <h2 className="font-display text-[clamp(2.4rem,6vw,5.4rem)] leading-[0.92]">

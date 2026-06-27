@@ -6,6 +6,8 @@ import { Maison } from './sections/Maison'
 import { Fabrication } from './sections/Fabrication'
 import { Carte } from './sections/Carte'
 import { Terroir } from './sections/Terroir'
+import { Nouveautes } from './sections/Nouveautes'
+import { Distributeurs } from './sections/Distributeurs'
 import { Galerie } from './sections/Galerie'
 import { Avis } from './sections/Avis'
 import { Contact } from './sections/Contact'
@@ -22,6 +24,8 @@ export default function App() {
       <Fabrication />
       <Carte />
       <Terroir />
+      <Nouveautes />
+      <Distributeurs />
       <Galerie />
       <Avis />
       <Contact />
