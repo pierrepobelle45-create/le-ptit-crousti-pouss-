@@ -12,7 +12,7 @@ export const business = {
   },
   phone: '03 81 44 32 16',
   phoneHref: 'tel:+33381443216',
-  service: "à emporter — ouverture en soirée, à partir de 17h30",
+  service: 'à emporter — du mardi au dimanche, 17h30 à 22h00',
   budget: '10–20 € par personne',
   facebook: {
     name: "Le p'tit crousti",
@@ -36,14 +36,14 @@ export const business = {
 } as const
 
 export const hours = {
-  note: 'Service du soir — ouverture à partir de 17h30. Horaires précis à confirmer.',
+  note: 'Service du soir, du mardi au dimanche. Fermé le lundi.',
   days: [
-    { day: 'Lundi', value: 'à confirmer' },
-    { day: 'Mardi', value: '17h30 – fermeture (à confirmer)' },
-    { day: 'Mercredi', value: '17h30 – fermeture (à confirmer)' },
-    { day: 'Jeudi', value: '17h30 – fermeture (à confirmer)' },
-    { day: 'Vendredi', value: '17h30 – fermeture (à confirmer)' },
-    { day: 'Samedi', value: '17h30 – fermeture (à confirmer)' },
-    { day: 'Dimanche', value: 'à confirmer' },
+    { day: 'Lundi', value: 'fermé' },
+    { day: 'Mardi', value: '17h30 – 22h00' },
+    { day: 'Mercredi', value: '17h30 – 22h00' },
+    { day: 'Jeudi', value: '17h30 – 22h00' },
+    { day: 'Vendredi', value: '17h30 – 22h00' },
+    { day: 'Samedi', value: '17h30 – 22h00' },
+    { day: 'Dimanche', value: '17h30 – 22h00' },
   ],
 } as const

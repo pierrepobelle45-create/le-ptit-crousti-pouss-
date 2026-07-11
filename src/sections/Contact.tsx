@@ -77,9 +77,9 @@ export function Contact() {
 
               <InfoBlock label="Service">
                 <p>À emporter</p>
-                <p>Ouverture en soirée</p>
+                <p>Du mardi au dimanche</p>
                 <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-tomate mt-2">
-                  dès 17h30
+                  17h30 – 22h00
                 </p>
               </InfoBlock>
 
@@ -122,7 +122,7 @@ export function Contact() {
                 ))}
               </ul>
               <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.22em] text-tomate">
-                ✦ à confirmer · Pierre complétera
+                ✦ fermé le lundi
               </p>
             </div>
           </div>

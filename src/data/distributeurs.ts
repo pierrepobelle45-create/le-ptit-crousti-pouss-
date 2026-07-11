@@ -12,17 +12,17 @@ export const distributeurs: Distributeur[] = [
     id: 'orchamps',
     ville: 'Orchamps-Vennes',
     postal: '25390',
-    adresse: 'adresse précise à confirmer',
-    reperage: 'à côté de la pizzeria',
-    horaires: '24/7 — à confirmer',
+    adresse: '3 Grande Rue',
+    reperage: 'devant la pizzeria',
+    horaires: '24h/24 · 7j/7',
   },
   {
     id: 'fuans',
     ville: 'Fuans',
     postal: '25390',
-    adresse: 'adresse précise à confirmer',
-    reperage: 'au village',
-    horaires: '24/7 — à confirmer',
+    adresse: '2 Grande Rue — lieu-dit Le Bureau',
+    reperage: 'au centre du village',
+    horaires: '24h/24 · 7j/7',
   },
 ]
 

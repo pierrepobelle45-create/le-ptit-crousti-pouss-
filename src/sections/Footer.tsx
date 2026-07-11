@@ -74,7 +74,7 @@ export function Footer() {
               ))}
             </ul>
             <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.22em] text-tomate">
-              ✦ à confirmer
+              ✦ fermé le lundi
             </p>
           </div>
         </div>
@@ -100,6 +100,59 @@ export function Footer() {
           <span>
             site par <a href="mailto:pierrepobelle45@gmail.com" className="underline decoration-tomate underline-offset-4 hover:text-farine">Linéa</a> · le geste juste
           </span>
+        </div>
+
+        <div
+          id="mentions-legales"
+          className="mt-10 scroll-mt-24 border-t border-farine/15 pt-6 font-mono text-[10px] leading-relaxed tracking-[0.06em] text-farine/45"
+        >
+          <h3 className="uppercase tracking-[0.28em] text-farine/55">Mentions légales</h3>
+          <p className="mt-3 max-w-[92ch]">
+            <span className="text-farine/70">Éditeur du site.</span> SARL Gauthier Le P'tit
+            Crousti (nom commercial « Le P'tit Crousti »), société à responsabilité limitée au
+            capital de 5 000 €, immatriculée au RCS de Besançon le 30 octobre 2017 sous le SIREN{' '}
+            <span className="tracking-[0.12em]">832 965 610</span> — SIRET siège{' '}
+            <span className="tracking-[0.12em]">832 965 610 00013</span>. TVA intracommunautaire :
+            FR11 832 965 610. Code NAF/APE : 56.10C — Restauration de type rapide. Siège social :
+            3 Grande Rue, 25390 Orchamps-Vennes, France. Tél.{' '}
+            <a href={business.phoneHref} className="underline underline-offset-2 hover:text-farine">
+              03 81 44 32 16
+            </a>
+            . Directeur de la publication : Benjamin Gauthier, gérant.
+          </p>
+          <p className="mt-2 max-w-[92ch]">
+            <span className="text-farine/70">Hébergement.</span> Vercel Inc., 440 N Barranca Ave
+            #4133, Covina, CA 91723, États-Unis — vercel.com.{' '}
+            <span className="text-farine/70">Conception & réalisation.</span> Linéa (studio
+            indépendant), pierrepobelle45@gmail.com.
+          </p>
+          <p className="mt-2 max-w-[92ch]">
+            <span className="text-farine/70">Propriété intellectuelle.</span> L'ensemble des
+            contenus (textes, photos, logo, mise en page) est la propriété exclusive de la SARL
+            Gauthier Le P'tit Crousti. Toute reproduction sans accord écrit préalable est
+            interdite (art. L.111-1 et suivants du Code de la propriété intellectuelle).
+          </p>
+          <p className="mt-2 max-w-[92ch]">
+            <span className="text-farine/70">Données personnelles (RGPD).</span> Aucune donnée
+            n'est collectée lors de la simple consultation du site. Les informations envoyées via
+            le formulaire de contact servent uniquement à répondre à votre demande et ne sont
+            transmises à aucun tiers. Vous pouvez exercer vos droits d'accès, de rectification ou
+            de suppression en appelant le{' '}
+            <a href={business.phoneHref} className="underline underline-offset-2 hover:text-farine">
+              03 81 44 32 16
+            </a>
+            . Réclamation auprès de la CNIL : www.cnil.fr.
+          </p>
+          <p className="mt-2 max-w-[92ch]">
+            <span className="text-farine/70">Cookies.</span> Ce site n'utilise pas de cookies de
+            suivi ni d'outils d'analyse tiers. La carte Google Maps intégrée peut déposer des
+            cookies de son propre chef (Google LLC — Politique de confidentialité Google).
+          </p>
+          <p className="mt-2 max-w-[92ch]">
+            <span className="text-farine/70">Litiges.</span> Les présentes sont soumises au droit
+            français. En cas de litige et à défaut d'accord amiable, les tribunaux de Besançon
+            sont seuls compétents.
+          </p>
         </div>
       </div>
     </footer>

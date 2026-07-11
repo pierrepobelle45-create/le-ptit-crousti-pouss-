@@ -11,7 +11,6 @@ import { Distributeurs } from './sections/Distributeurs'
 import { Galerie } from './sections/Galerie'
 import { Avis } from './sections/Avis'
 import { Contact } from './sections/Contact'
-import { MentionsLegales } from './sections/MentionsLegales'
 import { Footer } from './sections/Footer'
 
 export default function App() {
@@ -30,7 +29,6 @@ export default function App() {
       <Galerie />
       <Avis />
       <Contact />
-      <MentionsLegales />
       <Footer />
       <PhoneFloat />
     </main>

@@ -103,7 +103,7 @@ export function Distributeurs() {
         </div>
 
         <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.22em] text-croute-soft">
-          ✦ Adresses précises & horaires : à confirmer
+          ✦ Paiement par carte bancaire, sans contact
         </p>
       </div>
     </Section>
