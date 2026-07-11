@@ -17,7 +17,11 @@ export const business = {
   facebook: {
     name: "Le p'tit crousti",
     followers: '1 000+',
-    url: 'https://www.facebook.com/',
+    url: 'https://www.facebook.com/Leptitcrousti/',
+  },
+  google: {
+    reviewsUrl:
+      'https://www.google.com/maps/search/?api=1&query=Le+P%27tit+Crousti+Orchamps-Vennes',
   },
   rating: {
     score: 4.5,

@@ -80,9 +80,25 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-farine/15 pt-6 font-mono text-[10px] uppercase tracking-[0.22em] text-farine/55 md:flex-row md:items-center">
-          <span>© {new Date().getFullYear()} Le P'tit Crousti · Orchamps-Vennes</span>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            <span>© {new Date().getFullYear()} Le P'tit Crousti · Orchamps-Vennes</span>
+            <a
+              href="#mentions-legales"
+              className="underline decoration-croute-soft underline-offset-4 hover:text-farine"
+            >
+              Mentions légales
+            </a>
+            <a
+              href={business.google.reviewsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-croute-soft underline-offset-4 hover:text-farine"
+            >
+              Avis Google ↗
+            </a>
+          </div>
           <span>
-            site par <a href="#" className="underline decoration-tomate underline-offset-4 hover:text-farine">Linéa</a> · le geste juste
+            site par <a href="mailto:pierrepobelle45@gmail.com" className="underline decoration-tomate underline-offset-4 hover:text-farine">Linéa</a> · le geste juste
           </span>
         </div>
       </div>

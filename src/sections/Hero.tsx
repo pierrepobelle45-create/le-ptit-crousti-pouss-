@@ -174,7 +174,7 @@ export function Hero() {
           </h1>
           <p
             ref={baselineRef}
-            className="mt-6 max-w-[42ch] font-serif text-lg leading-snug text-encre/85 md:text-2xl"
+            className="mt-6 max-w-[42ch] rounded-full bg-farine/70 px-5 py-2.5 font-serif text-base leading-snug text-encre backdrop-blur-md md:text-2xl md:px-6 md:py-3"
           >
             {business.baseline}.
           </p>
@@ -200,8 +200,8 @@ export function Hero() {
           </a>
         </div>
 
-        {/* Filet d'indication scroll */}
-        <div className="pointer-events-none absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2 font-mono text-[9px] uppercase tracking-[0.4em] text-encre/55">
+        {/* Filet d'indication scroll — masqué sur mobile pour ne pas chevaucher le CTA */}
+        <div className="pointer-events-none absolute bottom-4 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2 font-mono text-[9px] uppercase tracking-[0.4em] text-encre/55 md:flex">
           scroll
           <span className="h-10 w-px bg-encre/35" />
         </div>

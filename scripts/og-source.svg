@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="pizza-crust" cx="50%" cy="50%" r="50%">
+      <stop offset="78%" stop-color="#C98A3E"/>
+      <stop offset="92%" stop-color="#A86028"/>
+      <stop offset="100%" stop-color="#7C3F1A"/>
+    </radialGradient>
+    <radialGradient id="pizza-sauce" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C13D33"/>
+      <stop offset="100%" stop-color="#87271F"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Fond crème farine -->
+  <rect width="1200" height="630" fill="#F4ECDD"/>
+
+  <!-- Motif points subtil -->
+  <g fill="#241710" opacity="0.03">
+    <circle cx="60" cy="60" r="1.5"/><circle cx="120" cy="90" r="1.5"/><circle cx="180" cy="60" r="1.5"/>
+    <circle cx="240" cy="90" r="1.5"/><circle cx="300" cy="60" r="1.5"/>
+  </g>
+
+  <!-- Pizza à droite -->
+  <g transform="translate(920 315)">
+    <circle r="240" fill="url(#pizza-crust)"/>
+    <circle r="208" fill="url(#pizza-sauce)"/>
+    <!-- Mozza -->
+    <g fill="#F4ECDD" opacity="0.94">
+      <ellipse cx="-70" cy="-70" rx="34" ry="26"/>
+      <ellipse cx="60" cy="-60" rx="40" ry="30" transform="rotate(-12 60 -60)"/>
+      <ellipse cx="90" cy="40" rx="32" ry="26" transform="rotate(18 90 40)"/>
+      <ellipse cx="-25" cy="70" rx="36" ry="28" transform="rotate(-8 -25 70)"/>
+      <ellipse cx="-100" cy="20" rx="28" ry="22"/>
+      <ellipse cx="15" cy="0" rx="26" ry="20"/>
+    </g>
+    <!-- Basilic -->
+    <g fill="#3E5E3A">
+      <path d="M-115 -105 q-10 -15 -22 -8 q4 15 22 8"/>
+      <path d="M105 -30 q12 -14 22 -2 q-6 14 -22 2"/>
+      <path d="M-45 105 q-12 -14 -22 -2 q6 14 22 2"/>
+      <path d="M80 110 q12 -14 22 -2 q-6 14 -22 2"/>
+      <path d="M-140 10 q-12 -14 -22 -2 q6 14 22 2"/>
+    </g>
+    <!-- Olives -->
+    <g fill="#2A1410">
+      <ellipse cx="-35" cy="-40" rx="8" ry="10"/>
+      <ellipse cx="45" cy="-130" rx="8" ry="10"/>
+      <ellipse cx="-110" cy="90" rx="8" ry="10"/>
+      <ellipse cx="130" cy="-15" rx="8" ry="10"/>
+      <ellipse cx="30" cy="120" rx="8" ry="10"/>
+    </g>
+    <!-- Tomates cerises -->
+    <g fill="#C13D33">
+      <circle cx="-60" cy="30" r="11"/>
+      <circle cx="55" cy="20" r="10"/>
+      <circle cx="0" cy="-85" r="9"/>
+    </g>
+  </g>
+
+  <!-- Bloc texte à gauche -->
+  <g>
+    <!-- Eyebrow -->
+    <text x="80" y="140" font-family="'Spline Sans Mono', monospace" font-size="18" letter-spacing="6" fill="#241710" opacity="0.7">✦  PIZZERIA ARTISANALE · ORCHAMPS-VENNES</text>
+
+    <!-- Wordmark -->
+    <text x="80" y="270" font-family="'Caprasimo', Georgia, serif" font-size="120" fill="#241710">Le P'tit</text>
+    <text x="80" y="390" font-family="'Caprasimo', Georgia, serif" font-size="120" fill="#A8332A">Crousti</text>
+
+    <!-- Baseline -->
+    <text x="80" y="450" font-family="'Rozha One', Georgia, serif" font-size="30" fill="#241710" opacity="0.85">La pizza maison, tradition italienne,</text>
+    <text x="80" y="490" font-family="'Rozha One', Georgia, serif" font-size="30" fill="#241710" opacity="0.85">au cœur du Haut-Doubs.</text>
+
+    <!-- Filet croute -->
+    <g stroke="#C98A3E" stroke-width="2" stroke-dasharray="8 6">
+      <line x1="80" y1="540" x2="220" y2="540"/>
+    </g>
+
+    <!-- Phone -->
+    <text x="80" y="580" font-family="'Spline Sans Mono', monospace" font-size="20" letter-spacing="4" fill="#A8332A">03 81 44 32 16</text>
+  </g>
+</svg>
