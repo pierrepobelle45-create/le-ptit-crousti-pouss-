@@ -102,9 +102,17 @@ export function Distributeurs() {
           ))}
         </div>
 
-        <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.22em] text-croute-soft">
-          ✦ Paiement par carte bancaire, sans contact
-        </p>
+        <div className="mt-10 flex flex-wrap items-center justify-between gap-4">
+          <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-croute-soft">
+            ✦ Paiement par carte bancaire, sans contact
+          </p>
+          <a
+            href="/distributeurs"
+            className="inline-flex items-center gap-2 rounded-full border border-croute-soft/50 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.22em] text-farine transition-colors hover:border-croute-soft hover:bg-croute-soft hover:text-braise"
+          >
+            Détails des deux distributeurs ↗
+          </a>
+        </div>
       </div>
     </Section>
   )

@@ -61,6 +61,12 @@ export function Terroir() {
               eux qui font la différence sur une <em>Oricampienne</em>, une <em>Morbiflette</em>,
               une <em>Royale</em>. La pâte est faite ici. Le reste vient d'à côté.
             </p>
+            <a
+              href="/pizzas-haut-doubs"
+              className="mt-8 inline-flex items-center gap-2 rounded-full border border-croute-soft/50 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.22em] text-farine transition-colors hover:border-croute-soft hover:bg-croute-soft hover:text-braise"
+            >
+              Nos pizzas au fromage du Haut-Doubs ↗
+            </a>
           </div>
 
           <div className="lg:col-span-7">
