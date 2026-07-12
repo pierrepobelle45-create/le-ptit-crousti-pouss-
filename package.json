@@ -9,6 +9,10 @@
     "preview": "vite preview --port 5174"
   },
   "dependencies": {
+    "@fontsource-variable/onest": "^5.2.11",
+    "@fontsource/caprasimo": "^5.2.7",
+    "@fontsource/rozha-one": "^5.2.7",
+    "@fontsource/spline-sans-mono": "^5.2.8",
     "framer-motion": "^11.11.17",
     "gsap": "^3.13.0",
     "lenis": "^1.1.20",

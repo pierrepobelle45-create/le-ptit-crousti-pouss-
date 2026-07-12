@@ -8,7 +8,7 @@
     <title>Le P'tit Crousti — Pizzeria artisanale à Orchamps-Vennes (Doubs)</title>
     <meta
       name="description"
-      content="Pizzas maison à emporter, façon tradition italienne, au cœur du Haut-Doubs. Morteau, morbier, Mont d'Or — la pizza qui a le goût d'ici. 3 Grande Rue, Orchamps-Vennes. 03 81 44 32 16. Distributeurs 24/7 à Orchamps-Vennes et Fuans."
+      content="Pizzeria artisanale à emporter, Orchamps-Vennes (Doubs). Pâte maison, régionales Morteau/morbier. Mar-Dim 17h30-22h · 03 81 44 32 16 · Distributeurs 24/7."
     />
     <link rel="canonical" href="https://www.leptitcrousti.fr/" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -53,13 +53,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Rozha+One&family=Onest:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Fonts self-hostées via fontsource (bundlées par Vite dans le CSS, cache long) -->
 
     <!-- JSON-LD : Restaurant -->
     <script type="application/ld+json">
@@ -90,8 +84,23 @@
         },
         "hasMap": "https://www.google.com/maps/search/?api=1&query=3+Grande+Rue,+25390+Orchamps-Vennes",
         "sameAs": [
-          "https://www.facebook.com/Leptitcrousti/"
+          "https://www.facebook.com/Leptitcrousti/",
+          "https://www.pagesjaunes.fr/pros/57515728"
         ],
+        "potentialAction": {
+          "@type": "OrderAction",
+          "name": "Commander par téléphone",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "tel:+33381443216",
+            "inLanguage": "fr-FR",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "deliveryMethod": "http://purl.org/goodrelations/v1#PickUpInStore"
+        },
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",

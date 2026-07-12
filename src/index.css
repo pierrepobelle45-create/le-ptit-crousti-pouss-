@@ -1,5 +1,13 @@
 @import 'tailwindcss';
 
+/* Fonts self-hostées (fontsource) — plus de dépendance Google Fonts */
+@import '@fontsource/caprasimo/400.css';
+@import '@fontsource/rozha-one/400.css';
+@import '@fontsource-variable/onest/wght.css';
+@import '@fontsource/spline-sans-mono/400.css';
+@import '@fontsource/spline-sans-mono/500.css';
+@import '@fontsource/spline-sans-mono/600.css';
+
 @theme {
   --color-farine: #f4ecdd;
   --color-farine-soft: #ebe1cf;
