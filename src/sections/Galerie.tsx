@@ -3,13 +3,13 @@ import { Section } from '../components/Section'
 import { ImageSlot } from '../components/ImageSlot'
 
 const tiles = [
-  { sketch: 'four', tone: 'braise', alt: 'Four à pizza : braises, chaleur, pizza qui dore.', caption: 'Four à bois', col: 'md:col-span-2', row: 'md:row-span-2', ratio: '1/1' },
-  { sketch: 'pizza', tone: 'tomate', alt: 'Pizza sortie du four, gros plan croustillant.', caption: 'Sortie du four', col: '', row: '', ratio: '4/5' },
-  { sketch: 'devanture', tone: 'farine', alt: 'Devanture 3 Grande Rue, Orchamps-Vennes.', caption: '3 Grande Rue', col: '', row: '', ratio: '4/5' },
-  { sketch: 'pate', tone: 'farine', alt: 'Pâte façonnée à la main.', caption: 'Pâte maison', col: 'md:col-span-2', row: '', ratio: '16/9' },
-  { sketch: 'ingredients', tone: 'basilic', alt: 'Ingrédients frais — tomate, basilic.', caption: 'Frais du jour', col: '', row: '', ratio: '4/5' },
-  { sketch: 'pizza', tone: 'croute', alt: 'Pizza régionale Morteau cancoillotte.', caption: 'Oricampienne', col: '', row: '', ratio: '4/5' },
-  { sketch: 'plat', tone: 'tomate', alt: 'Carte des pizzas à emporter, vue de dessus.', caption: 'À emporter', col: 'md:col-span-2', row: '', ratio: '16/9' },
+  { src: '/photos/pizza-jambon-cru.webp', alt: 'Pizza jambon cru, mozzarella crémeuse et salade, vue de dessus.', credit: 'Jambon cru', col: 'md:col-span-2', row: 'md:row-span-2', ratio: '1/1' },
+  { src: '/photos/pizza-burger.webp', alt: 'Pizza Burger — viande hachée, cheddar, bacon, cornichons, tomates cerises.', credit: 'Pizza Burger', col: '', row: '', ratio: '4/5' },
+  { src: '/photos/terrasse.webp', alt: "La terrasse en bois du P'tit Crousti, au soleil.", credit: 'La terrasse', col: '', row: '', ratio: '4/5' },
+  { src: '/photos/pizza-jambon-cru-parmesan.webp', alt: 'Pizza jambon cru, roquette et copeaux de parmesan, croûte au feu de bois.', credit: 'Au feu de bois', col: 'md:col-span-2', row: '', ratio: '16/9' },
+  { src: '/photos/pizza-coppa-chevre.webp', alt: 'Pizza coppa, chèvre, roquette et pignons de pin.', credit: 'Coppa & chèvre', col: '', row: '', ratio: '4/5' },
+  { src: '/photos/salle-cosy.webp', alt: 'Le coin cosy de la salle — guirlandes lumineuses et plantes.', credit: 'Le coin cosy', col: '', row: '', ratio: '4/5' },
+  { src: '/photos/salade-poulet.webp', alt: 'Salade de poulet, crudités et pain maison grillé.', credit: 'Salade de poulet', col: 'md:col-span-2', row: '', ratio: '16/9' },
 ] as const
 
 export function Galerie() {
@@ -22,8 +22,8 @@ export function Galerie() {
           .
         </h2>
         <p className="mt-6 max-w-[48ch] text-sm text-encre/70">
-          Pour voir les vraies photos au quotidien — pizzas, four, devanture, nouveautés — la page
-          Facebook <em>« Le p'tit crousti »</em> est l'endroit. Mille fans n'ont pas tort.
+          Les pizzas au feu de bois, la salle, la terrasse — en vrai. Et tous les jours,
+          encore plus sur la page Facebook <em>« Le p'tit crousti »</em>, suivie par 1 000 gourmands.
         </p>
 
         <div className="mt-12 grid auto-rows-[260px] grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
@@ -38,10 +38,9 @@ export function Galerie() {
               className={`${t.col} ${t.row} h-full overflow-hidden`}
             >
               <ImageSlot
-                sketch={t.sketch}
-                tone={t.tone}
+                src={t.src}
                 alt={t.alt}
-                caption={t.caption}
+                credit={t.credit}
                 ratio={t.ratio}
                 className="h-full"
                 parallax

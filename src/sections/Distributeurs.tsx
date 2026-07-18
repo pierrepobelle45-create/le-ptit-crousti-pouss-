@@ -64,9 +64,10 @@ export function Distributeurs() {
             >
               <div className="aspect-[4/3] w-full">
                 <ImageSlot
+                  src={d.image}
                   sketch="devanture"
                   tone={i === 0 ? 'croute' : 'tomate'}
-                  alt={`Distributeur automatique Le P'tit Crousti — ${d.ville}.`}
+                  alt={`Distributeur automatique de pizzas Le P'tit Crousti — ${d.ville}.`}
                   caption={`Distributeur · ${d.ville}`}
                   ratio="4/3"
                 />

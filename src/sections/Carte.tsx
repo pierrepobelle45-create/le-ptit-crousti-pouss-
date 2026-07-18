@@ -1,6 +1,15 @@
 import { useMemo, useState } from 'react'
 import { AnimatePresence, LayoutGroup, motion } from 'framer-motion'
-import { categories, menu, menuNote, type Pizza, type PizzaCategory } from '../data/menu'
+import {
+  categories,
+  desserts,
+  menu,
+  menuNote,
+  salades,
+  type Extra,
+  type Pizza,
+  type PizzaCategory,
+} from '../data/menu'
 import { Section } from '../components/Section'
 
 type Filter = PizzaCategory | 'tout'
@@ -83,6 +92,12 @@ export function Carte() {
           </AnimatePresence>
         </motion.div>
 
+        {/* Desserts & salades */}
+        <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-sm border border-encre/15 bg-encre/15 sm:grid-cols-2">
+          <ExtrasList title="Desserts" hint="fait maison" items={desserts} />
+          <ExtrasList title="Salades" hint="nos suggestions" items={salades} />
+        </div>
+
         {/* Indication crème */}
         <div className="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-encre/15 pt-6">
           <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-encre/70">
@@ -141,6 +156,43 @@ function PizzaCard({ pizza }: { pizza: Pizza }) {
         </span>
       </footer>
     </motion.article>
+  )
+}
+
+function ExtrasList({
+  title,
+  hint,
+  items,
+}: {
+  title: string
+  hint?: string
+  items: Extra[]
+}) {
+  return (
+    <div className="bg-farine p-6 md:p-8">
+      <header className="flex items-baseline justify-between gap-4 border-b border-encre/15 pb-4">
+        <h3 className="font-display text-2xl text-encre md:text-3xl">{title}</h3>
+        {hint && (
+          <span className="font-mono text-[9px] uppercase tracking-[0.24em] text-encre/45">
+            {hint}
+          </span>
+        )}
+      </header>
+      <ul className="mt-2 flex flex-col">
+        {items.map((it) => (
+          <li
+            key={it.name}
+            className="flex items-baseline gap-3 py-2.5 text-encre/80"
+          >
+            <span className="font-serif text-base md:text-lg">{it.name}</span>
+            <span aria-hidden className="flex-1 translate-y-[-2px] border-b border-dotted border-encre/25" />
+            <span className="font-mono text-sm text-tomate md:text-base">
+              {it.price.toFixed(2).replace('.', ',')} €
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }
 

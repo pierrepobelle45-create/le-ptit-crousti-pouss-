@@ -5,6 +5,7 @@ export type Distributeur = {
   adresse: string
   reperage: string
   horaires: string
+  image: string
 }
 
 export const distributeurs: Distributeur[] = [
@@ -15,6 +16,7 @@ export const distributeurs: Distributeur[] = [
     adresse: '3 Grande Rue',
     reperage: 'devant la pizzeria',
     horaires: '24h/24 · 7j/7',
+    image: '/photos/distributeur-orchamps-vennes.webp',
   },
   {
     id: 'fuans',
@@ -23,6 +25,7 @@ export const distributeurs: Distributeur[] = [
     adresse: '2 Grande Rue — lieu-dit Le Bureau',
     reperage: 'au centre du village',
     horaires: '24h/24 · 7j/7',
+    image: '/photos/distributeur-fuans.webp',
   },
 ]
 

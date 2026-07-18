@@ -106,40 +106,36 @@ export function Maison() {
             <div className="grid grid-cols-2 gap-3 md:gap-4">
               <div data-reveal>
                 <ImageSlot
-                  sketch="pate"
-                  tone="farine"
-                  alt="Gros plan sur la pâte en train d'être façonnée — mains, farine, geste."
-                  caption="Pâte maison · façonnée"
+                  src="/photos/pizza-jambon-cru-basilic.webp"
+                  alt="Pizza jambon cru et basilic frais, croûte levée sortie du four à bois."
+                  caption="Jambon cru & basilic"
                   ratio="3/4"
                   className="rounded-sm"
                 />
               </div>
               <div data-reveal className="mt-12">
                 <ImageSlot
-                  sketch="four"
-                  tone="braise"
-                  alt="Four à pizza, braises, chaleur."
-                  caption="Four · 300°C"
+                  src="/photos/pizza-chevre.webp"
+                  alt="Pizza chèvre à la croûte dorée au feu, salade fraîche et tomates cerises."
+                  caption="Croûte au feu"
                   ratio="3/4"
                   className="rounded-sm"
                 />
               </div>
               <div data-reveal className="-mt-4">
                 <ImageSlot
-                  sketch="ingredients"
-                  tone="basilic"
-                  alt="Ingrédients frais : tomate, basilic, fromage."
-                  caption="Ingrédients frais"
+                  src="/photos/pizza-vegetarienne.webp"
+                  alt="Pizza végétarienne — poivrons, champignons, olives et billes de mozzarella."
+                  caption="Légumes frais"
                   ratio="3/4"
                   className="rounded-sm"
                 />
               </div>
               <div data-reveal className="mt-8">
                 <ImageSlot
-                  sketch="pizza"
-                  tone="tomate"
-                  alt="Pizza sortie du four, gros plan croustillant."
-                  caption="Croûte dorée"
+                  src="/photos/pizza-jambon-ananas.webp"
+                  alt="Pizza jambon et ananas, roquette et copeaux de fromage."
+                  caption="Sortie du four"
                   ratio="3/4"
                   className="rounded-sm"
                 />
