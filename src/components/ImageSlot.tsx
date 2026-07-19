@@ -99,14 +99,6 @@ export function ImageSlot({
           {credit}
         </figcaption>
       )}
-      {!src && (
-        <span
-          className="absolute top-3 left-3 z-10 inline-flex items-center gap-1.5 rounded-full bg-encre/85 px-2.5 py-1 text-[9px] uppercase tracking-[0.22em] font-mono text-farine"
-          aria-hidden
-        >
-          <span className="h-1 w-1 rounded-full bg-tomate" /> à compléter
-        </span>
-      )}
     </figure>
   )
 }

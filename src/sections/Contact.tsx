@@ -10,6 +10,7 @@ export function Contact() {
   const [form, setForm] = useState<FormState>({ nom: '', tel: '', email: '', message: '' })
   const [status, setStatus] = useState<Status>('idle')
   const [errors, setErrors] = useState<Partial<Record<keyof FormState, string>>>({})
+  const [mapConsent, setMapConsent] = useState(false)
 
   function update<K extends keyof FormState>(k: K, v: string) {
     setForm((f) => ({ ...f, [k]: v }))
@@ -129,16 +130,40 @@ export function Contact() {
 
           {/* Colonne plan + formulaire */}
           <div className="lg:col-span-7">
-            {/* Plan — vraie carte Google Maps */}
+            {/* Plan — Google Maps chargé au clic (RGPD : aucun cookie Google avant consentement) */}
             <div className="relative overflow-hidden rounded-sm bg-encre">
               <div className="aspect-[16/10] w-full">
-                <iframe
-                  src="https://maps.google.com/maps?q=3+Grande+Rue,+25390+Orchamps-Vennes&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                  className="block h-full w-full border-0"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Plan — Le P'tit Crousti, 3 Grande Rue, Orchamps-Vennes"
-                />
+                {mapConsent ? (
+                  <iframe
+                    src="https://maps.google.com/maps?q=3+Grande+Rue,+25390+Orchamps-Vennes&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    className="block h-full w-full border-0"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Plan — Le P'tit Crousti, 3 Grande Rue, Orchamps-Vennes"
+                  />
+                ) : (
+                  <div className="flex h-full w-full flex-col items-center justify-center gap-4 px-6 text-center">
+                    <p className="max-w-[42ch] font-mono text-[10px] uppercase tracking-[0.18em] text-farine/60">
+                      Carte non chargée — pour protéger vos données
+                    </p>
+                    <button
+                      type="button"
+                      onClick={() => setMapConsent(true)}
+                      className="inline-flex items-center gap-2 rounded-full bg-tomate px-5 py-2.5 font-mono text-[10px] uppercase tracking-[0.22em] text-farine transition-colors hover:bg-tomate-deep"
+                    >
+                      ✦ Afficher la carte
+                    </button>
+                    <p className="max-w-[46ch] text-[11px] leading-snug text-farine/45">
+                      En l'affichant, vous acceptez le dépôt de cookies par Google Maps.{' '}
+                      <a
+                        href="/confidentialite"
+                        className="underline underline-offset-2 hover:text-farine/70"
+                      >
+                        En savoir plus
+                      </a>
+                    </p>
+                  </div>
+                )}
               </div>
               <div className="pointer-events-none absolute inset-x-0 top-0 z-10 flex items-start justify-between p-5">
                 <span className="pointer-events-auto inline-flex items-center gap-1.5 rounded-full bg-tomate px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.22em] text-farine shadow-[0_4px_14px_-4px_rgba(58,30,20,0.45)]">
@@ -205,6 +230,18 @@ export function Contact() {
                 error={errors.message}
                 multiline
               />
+
+              <p className="text-[11px] leading-snug text-encre/55">
+                Vos informations servent uniquement à traiter votre demande et ne sont transmises
+                à aucun tiers.{' '}
+                <a
+                  href="/confidentialite"
+                  className="underline decoration-encre/30 underline-offset-2 hover:text-encre"
+                >
+                  Politique de confidentialité
+                </a>
+                .
+              </p>
 
               <div className="flex items-center justify-between pt-2">
                 <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-encre/55">

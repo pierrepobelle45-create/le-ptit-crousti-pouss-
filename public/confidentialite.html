@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F4ECDD" />
+
+    <title>Politique de confidentialité (RGPD) | Le P'tit Crousti</title>
+    <meta
+      name="description"
+      content="Politique de confidentialité du site leptitcrousti.fr : données collectées, finalités, bases légales, durée de conservation, cookies, transferts et vos droits au titre du RGPD."
+    />
+    <link rel="canonical" href="https://www.leptitcrousti.fr/confidentialite" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Le P'tit Crousti" />
+    <meta property="og:title" content="Politique de confidentialité — Le P'tit Crousti" />
+    <meta property="og:description" content="Comment le site leptitcrousti.fr traite vos données personnelles — RGPD, cookies, vos droits." />
+    <meta property="og:url" content="https://www.leptitcrousti.fr/confidentialite" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <style>
+      :root {
+        --farine: #f4ecdd;
+        --farine-soft: #ebe1cf;
+        --encre: #241710;
+        --tomate: #a8332a;
+        --tomate-deep: #87271f;
+        --basilic: #3e5e3a;
+        --croute: #c98a3e;
+        --braise: #3a1e14;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body {
+        background: var(--farine);
+        color: var(--encre);
+        font-family: 'Onest', system-ui, -apple-system, sans-serif;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: inherit; }
+      main { max-width: 820px; margin: 0 auto; padding: 4rem 1.5rem 3rem; }
+      header {
+        max-width: 820px; margin: 0 auto; padding: 1.5rem 1.5rem 0;
+        display: flex; justify-content: space-between; align-items: center;
+      }
+      header img { height: 44px; width: auto; }
+      header a.tel {
+        background: var(--tomate); color: var(--farine);
+        padding: 0.7rem 1.2rem; border-radius: 999px;
+        font-family: 'Spline Sans Mono', ui-monospace, monospace;
+        font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; text-decoration: none;
+      }
+      header a.tel:hover { background: var(--tomate-deep); }
+      .eyebrow {
+        font-family: 'Spline Sans Mono', ui-monospace, monospace;
+        font-size: 0.7rem; letter-spacing: 0.28em; text-transform: uppercase;
+        color: var(--tomate); margin-bottom: 1rem;
+      }
+      h1 {
+        font-family: 'Rozha One', 'Playfair Display', Georgia, serif;
+        font-size: clamp(2.2rem, 5.5vw, 3.6rem); line-height: 1.05;
+        letter-spacing: -0.01em; margin-bottom: 0.75rem; color: var(--encre);
+      }
+      h1 em { color: var(--tomate); font-style: italic; }
+      .updated {
+        font-family: 'Spline Sans Mono', ui-monospace, monospace;
+        font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase;
+        color: rgba(36, 23, 16, 0.5); margin-bottom: 2.5rem;
+      }
+      h2 {
+        font-family: 'Rozha One', Georgia, serif;
+        font-size: clamp(1.3rem, 3vw, 1.8rem); line-height: 1.15;
+        margin: 2.75rem 0 0.9rem; color: var(--encre);
+      }
+      h2 .num {
+        font-family: 'Spline Sans Mono', ui-monospace, monospace;
+        font-size: 0.8rem; color: var(--croute); margin-right: 0.6rem; vertical-align: 0.15em;
+      }
+      p { max-width: 70ch; margin-bottom: 1rem; color: rgba(36, 23, 16, 0.86); }
+      p.lead { font-size: 1.15rem; color: var(--encre); margin: 1rem 0 2rem; max-width: 62ch; }
+      ul { max-width: 70ch; margin: 0 0 1rem 1.1rem; }
+      ul li { margin-bottom: 0.5rem; color: rgba(36, 23, 16, 0.86); }
+      strong { color: var(--encre); font-weight: 600; }
+      a.link { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--croute); }
+      a.link:hover { color: var(--tomate); }
+      .filet { height: 1px; width: 80px; background: repeating-linear-gradient(90deg, var(--croute) 0 8px, transparent 8px 14px); margin: 2.5rem 0; }
+      .callout {
+        border: 1px solid rgba(36, 23, 16, 0.15); background: var(--farine-soft);
+        border-left: 3px solid var(--croute); padding: 1.1rem 1.4rem; margin: 1.25rem 0;
+      }
+      .callout p { margin: 0; }
+      table.legal {
+        width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.95rem;
+      }
+      table.legal th, table.legal td {
+        text-align: left; padding: 0.7rem 0.9rem; border: 1px solid rgba(36, 23, 16, 0.15);
+        vertical-align: top;
+      }
+      table.legal th {
+        background: var(--farine-soft);
+        font-family: 'Spline Sans Mono', ui-monospace, monospace;
+        font-size: 0.64rem; letter-spacing: 0.14em; text-transform: uppercase;
+        color: rgba(36, 23, 16, 0.6);
+      }
+      .table-wrap { overflow-x: auto; }
+      nav.crumbs {
+        font-family: 'Spline Sans Mono', ui-monospace, monospace;
+        font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;
+        color: rgba(36, 23, 16, 0.55); margin-bottom: 2rem;
+      }
+      nav.crumbs a { text-decoration: underline; text-underline-offset: 3px; }
+      .back {
+        display: inline-block; margin-top: 2.5rem; padding: 0.8rem 1.4rem;
+        background: var(--tomate); color: var(--farine); text-decoration: none; border-radius: 999px;
+        font-family: 'Spline Sans Mono', ui-monospace, monospace;
+        font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;
+      }
+      .back:hover { background: var(--tomate-deep); }
+      footer {
+        max-width: 820px; margin: 0 auto; padding: 2rem 1.5rem 3rem;
+        font-family: 'Spline Sans Mono', ui-monospace, monospace;
+        font-size: 0.7rem; letter-spacing: 0.06em; color: rgba(36, 23, 16, 0.55); line-height: 1.7;
+      }
+      footer a { text-decoration: underline; text-underline-offset: 3px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="/" aria-label="Retour à l'accueil">
+        <img src="/logo.png" alt="Le P'tit Crousti — pizzeria Orchamps-Vennes" />
+      </a>
+      <a class="tel" href="tel:+33381443216">03 81 44 32 16</a>
+    </header>
+
+    <main>
+      <nav class="crumbs" aria-label="Fil d'Ariane">
+        <a href="/">Accueil</a> · Politique de confidentialité
+      </nav>
+
+      <p class="eyebrow">✦ Protection des données</p>
+      <h1>Politique de <em>confidentialité</em>.</h1>
+      <p class="updated">Dernière mise à jour : 19 juillet 2026</p>
+
+      <p class="lead">
+        Le P'tit Crousti attache de l'importance au respect de votre vie privée. Cette page explique
+        quelles données nous traitons, pourquoi, combien de temps, et quels sont vos droits — dans le
+        respect du <strong>Règlement général sur la protection des données (RGPD)</strong> et de la
+        loi Informatique et Libertés.
+      </p>
+
+      <h2><span class="num">01</span>Responsable du traitement</h2>
+      <p>
+        Le responsable du traitement des données est la <strong>SARL Gauthier Le P'tit Crousti</strong>,
+        3 Grande Rue, 25390 Orchamps-Vennes, France. Pour toute question relative à vos données :
+        téléphone <a class="link" href="tel:+33381443216">03 81 44 32 16</a> ou courrier postal à
+        l'adresse du siège.
+      </p>
+
+      <h2><span class="num">02</span>Données que nous collectons</h2>
+      <p>
+        Nous appliquons le principe de <strong>minimisation</strong> : nous ne collectons que le
+        strict nécessaire.
+      </p>
+      <ul>
+        <li>
+          <strong>Simple navigation :</strong> aucune donnée personnelle ne vous est demandée, aucun
+          cookie de suivi ni outil de mesure d'audience n'est déposé. Notre hébergeur (Vercel) peut
+          toutefois enregistrer des données techniques de connexion (adresse IP, type de navigateur)
+          dans ses journaux, à des fins de sécurité et de bon fonctionnement du site.
+        </li>
+        <li>
+          <strong>Formulaire de contact :</strong> lorsque vous nous écrivez, nous recueillons votre
+          nom, votre numéro de téléphone, votre adresse e-mail (facultative) et le contenu de votre
+          message.
+        </li>
+        <li>
+          <strong>Carte Google Maps :</strong> la carte n'est chargée que si vous cliquez sur
+          « Afficher la carte ». À ce moment-là, Google peut collecter votre adresse IP et déposer
+          des cookies (voir la section Cookies).
+        </li>
+      </ul>
+
+      <h2><span class="num">03</span>Finalités et bases légales</h2>
+      <div class="table-wrap">
+        <table class="legal">
+          <thead>
+            <tr><th>Traitement</th><th>Finalité</th><th>Base légale (RGPD)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Formulaire de contact</td>
+              <td>Répondre à votre demande, votre commande ou votre question</td>
+              <td>Votre consentement, matérialisé par l'envoi du formulaire, et notre intérêt légitime à vous répondre (art. 6.1.a et 6.1.f)</td>
+            </tr>
+            <tr>
+              <td>Journaux techniques du serveur</td>
+              <td>Sécurité, prévention des abus, bon fonctionnement du site</td>
+              <td>Intérêt légitime (art. 6.1.f)</td>
+            </tr>
+            <tr>
+              <td>Affichage de la carte Google Maps</td>
+              <td>Vous permettre de localiser la pizzeria</td>
+              <td>Votre consentement (clic sur « Afficher la carte », art. 6.1.a)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2><span class="num">04</span>Destinataires des données</h2>
+      <p>
+        Vos données sont destinées <strong>exclusivement</strong> à la SARL Gauthier Le P'tit
+        Crousti. Elles ne sont ni vendues, ni louées, ni cédées à des tiers à des fins commerciales.
+        Seuls interviennent, dans la stricte mesure nécessaire, nos prestataires techniques :
+      </p>
+      <ul>
+        <li><strong>Vercel Inc.</strong> — hébergement du site ;</li>
+        <li><strong>Google LLC</strong> — uniquement si vous choisissez d'afficher la carte.</li>
+      </ul>
+
+      <h2><span class="num">05</span>Transferts hors Union européenne</h2>
+      <p>
+        Notre hébergeur (Vercel Inc.) et Google LLC sont établis aux États-Unis. Les transferts de
+        données vers ces prestataires sont encadrés par des garanties appropriées au sens du RGPD :
+        <strong>Data Privacy Framework</strong> UE–États-Unis et/ou <strong>clauses contractuelles
+        types</strong> de la Commission européenne.
+      </p>
+
+      <h2><span class="num">06</span>Durée de conservation</h2>
+      <ul>
+        <li>
+          <strong>Messages de contact :</strong> conservés le temps nécessaire au traitement de votre
+          demande, puis au maximum <strong>3 ans</strong> à compter de notre dernier contact, avant
+          suppression.
+        </li>
+        <li><strong>Journaux techniques :</strong> conservés pour une durée limitée par l'hébergeur, généralement inférieure à 13 mois.</li>
+      </ul>
+
+      <h2><span class="num">07</span>Cookies</h2>
+      <p>
+        Ce site <strong>ne dépose aucun cookie</strong> de mesure d'audience, de publicité ou de
+        suivi. Le seul dépôt possible provient de la <strong>carte Google Maps</strong>, et
+        uniquement après votre clic sur « Afficher la carte » : Google est alors susceptible de
+        déposer ses propres cookies, régis par la
+        <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">politique de confidentialité de Google</a>.
+        Pour ne déposer aucun cookie, il suffit de ne pas afficher la carte. Vous pouvez également
+        configurer votre navigateur pour bloquer ou supprimer les cookies.
+      </p>
+
+      <h2><span class="num">08</span>Sécurité</h2>
+      <p>
+        Le site est intégralement servi en <strong>HTTPS</strong> (connexion chiffrée) et met en
+        œuvre des en-têtes de sécurité (HSTS, protection contre le détournement de contenu et le
+        clickjacking) afin de protéger la confidentialité et l'intégrité des échanges.
+      </p>
+
+      <h2><span class="num">09</span>Vos droits</h2>
+      <p>
+        Conformément aux articles 15 à 22 du RGPD, vous disposez des droits suivants sur vos données :
+      </p>
+      <ul>
+        <li><strong>Droit d'accès</strong> — savoir quelles données nous détenons ;</li>
+        <li><strong>Droit de rectification</strong> — corriger des données inexactes ;</li>
+        <li><strong>Droit à l'effacement</strong> — demander la suppression de vos données ;</li>
+        <li><strong>Droit d'opposition</strong> et de <strong>limitation</strong> du traitement ;</li>
+        <li><strong>Droit à la portabilité</strong> de vos données ;</li>
+        <li><strong>Droit de retirer votre consentement</strong> à tout moment.</li>
+      </ul>
+
+      <h2><span class="num">10</span>Exercer vos droits</h2>
+      <div class="callout">
+        <p>
+          Pour exercer l'un de ces droits, contactez-nous par téléphone au
+          <a class="link" href="tel:+33381443216"> 03 81 44 32 16</a> ou par courrier à
+          <strong> SARL Gauthier Le P'tit Crousti — 3 Grande Rue, 25390 Orchamps-Vennes</strong>.
+          Nous pourrons vous demander une preuve d'identité et vous répondrons dans un délai d'un
+          mois.
+        </p>
+      </div>
+
+      <h2><span class="num">11</span>Réclamation</h2>
+      <p>
+        Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous
+        pouvez introduire une réclamation auprès de la <strong>CNIL</strong> — Commission Nationale
+        de l'Informatique et des Libertés, 3 Place de Fontenoy, TSA 80715, 75334 Paris Cedex 07 —
+        <a class="link" href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">www.cnil.fr</a>.
+      </p>
+
+      <h2><span class="num">12</span>Modifications</h2>
+      <p>
+        La présente politique peut être mise à jour pour refléter une évolution du site ou de la
+        réglementation. La date de dernière mise à jour figure en haut de cette page.
+      </p>
+
+      <div class="filet"></div>
+      <p>
+        Voir aussi nos <a class="link" href="/mentions-legales">mentions légales</a>.
+      </p>
+
+      <a class="back" href="/">↩ Retour à l'accueil</a>
+    </main>
+
+    <footer>
+      <p>
+        © Le P'tit Crousti · SARL Gauthier Le P'tit Crousti · 3 Grande Rue, 25390 Orchamps-Vennes ·
+        03 81 44 32 16 · <a href="/mentions-legales">Mentions légales</a> ·
+        <a href="/">Retour à l'accueil</a>
+      </p>
+    </footer>
+  </body>
+</html>
