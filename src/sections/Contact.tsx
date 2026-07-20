@@ -33,8 +33,21 @@ export function Contact() {
   function onSubmit(e: React.FormEvent) {
     e.preventDefault()
     if (!validate()) return
-    setStatus('sending')
-    setTimeout(() => setStatus('sent'), 900)
+    const to = business.contactEmail.join('@')
+    const subject = `Message du site — ${form.nom}`
+    const body = [
+      `Nom : ${form.nom}`,
+      `Téléphone : ${form.tel}`,
+      form.email ? `Email : ${form.email}` : null,
+      '',
+      form.message,
+    ]
+      .filter((l) => l !== null)
+      .join('\n')
+    window.location.href = `mailto:${to}?subject=${encodeURIComponent(
+      subject,
+    )}&body=${encodeURIComponent(body)}`
+    setStatus('sent')
   }
 
   return (
@@ -249,10 +262,9 @@ export function Contact() {
                 </p>
                 <button
                   type="submit"
-                  disabled={status === 'sending' || status === 'sent'}
-                  className="inline-flex items-center gap-2 rounded-full bg-encre px-6 py-3 font-mono text-[11px] uppercase tracking-[0.22em] text-farine transition-colors hover:bg-tomate disabled:opacity-60"
+                  className="inline-flex items-center gap-2 rounded-full bg-encre px-6 py-3 font-mono text-[11px] uppercase tracking-[0.22em] text-farine transition-colors hover:bg-tomate"
                 >
-                  {status === 'sending' ? 'envoi…' : status === 'sent' ? 'envoyé ✓' : 'envoyer →'}
+                  {status === 'sent' ? 'mail ouvert ✓' : 'écrire par mail →'}
                 </button>
               </div>
 
@@ -264,8 +276,8 @@ export function Contact() {
                     exit={{ opacity: 0 }}
                     className="mt-2 rounded-sm bg-basilic/15 px-4 py-3 text-sm text-basilic-deep"
                   >
-                    Merci ! On revient vers vous rapidement. Pour une commande tout de suite,
-                    appelez le{' '}
+                    Votre messagerie s'ouvre avec le message pré-rempli — il ne reste qu'à cliquer
+                    sur « Envoyer ». Une commande tout de suite ? Appelez le{' '}
                     <a href={business.phoneHref} className="font-medium underline">
                       {business.phone}
                     </a>

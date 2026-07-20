@@ -12,6 +12,8 @@ export const business = {
   },
   phone: '03 81 44 32 16',
   phoneHref: 'tel:+33381443216',
+  // Assemblé en JS au moment du clic (jamais rendu dans le HTML) pour limiter le scraping.
+  contactEmail: ['gauthier.benjamin', 'sfr.fr'],
   service: 'à emporter — du mardi au dimanche, 17h30 à 22h00',
   budget: '10–20 € par personne',
   facebook: {
