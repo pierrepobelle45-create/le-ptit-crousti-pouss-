@@ -25,15 +25,13 @@ export function Hero() {
   useEffect(() => {
     registerGsap()
     const ctx = gsap.context(() => {
-      // Titre — SplitText à l'assemblage
+      // Logo hero — entrée douce (scale + fondu)
       if (titleRef.current) {
-        const split = new SplitText(titleRef.current, { type: 'chars,words' })
-        gsap.from(split.chars, {
-          yPercent: 110,
-          rotate: 4,
+        gsap.from(titleRef.current, {
+          scale: 0.88,
+          yPercent: 6,
           opacity: 0,
-          stagger: 0.025,
-          duration: 1.2,
+          duration: 1.3,
           ease: 'power4.out',
           delay: 0.15,
         })
@@ -157,20 +155,14 @@ export function Hero() {
             <span className="h-1.5 w-1.5 rounded-full bg-tomate" />
             La pizza maison · tradition italienne
           </span>
-          <h1
-            ref={titleRef}
-            className="font-display text-[clamp(3.5rem,12vw,11rem)] leading-[0.88] text-encre"
-          >
-            <span className="block">Le P'tit</span>
-            <span
-              className="block text-farine"
-              style={{
-                WebkitTextStroke: '1.5px #241710',
-                textShadow: '0 2px 0 rgba(36,23,16,0.18)',
-              }}
-            >
-              Crousti
-            </span>
+          <h1 ref={titleRef} className="relative w-full">
+            <img
+              src="/logo-hero.webp"
+              alt="Le P'tit Crousti — pizza sur place ou à emporter"
+              width={1056}
+              height={236}
+              className="relative left-1/2 w-[98vw] max-w-none -translate-x-1/2 drop-shadow-[0_3px_0_rgba(36,23,16,0.12)] sm:w-[126vw] md:w-[156vw]"
+            />
           </h1>
           <p
             ref={baselineRef}
