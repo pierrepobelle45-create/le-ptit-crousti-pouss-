@@ -34,11 +34,11 @@ export function Header() {
           className="group inline-flex items-center"
         >
           <img
-            src="/logo.png"
-            alt="Le P'tit Crousti"
-            width={48}
-            height={62}
-            className="h-12 w-auto transition-transform duration-500 group-hover:rotate-[-2deg] md:h-14"
+            src="/logo-header.webp"
+            alt="Le P'tit Crousti — pizza sur place ou à emporter"
+            width={720}
+            height={161}
+            className="h-10 w-auto transition-transform duration-500 group-hover:rotate-[-2deg] md:h-12"
           />
         </a>
 
